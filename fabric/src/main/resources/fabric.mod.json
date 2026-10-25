@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "Choose what you keep when you die. By default your armour, tools and weapons stay on you and the rest drops, glowing. Operators change it in a chest menu. Server-side only.",
+  "authors": ["${mod_author}"],
+  "contact": {
+    "homepage": "https://github.com/BackupBackupFede/${mod_repo}",
+    "issues": "https://github.com/BackupBackupFede/${mod_repo}/issues"
+  },
+  "license": "${mod_license}",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.emeraude.fairdeath.fabric.FairDeathFabric"]
+  },
+  "mixins": ["${mod_id}.mixins.json"],
+  "depends": {
+    "minecraft": "${fabric_mc_dep}",
+    "fabricloader": ">=0.16"${fabric_api_dep}
+  }
+}
